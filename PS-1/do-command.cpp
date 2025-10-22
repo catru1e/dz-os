@@ -4,6 +4,7 @@
 #include <chrono>
 #include <vector>
 #include <string>
+#include <cstring>
 
 void do_command(char** argv) {
     using namespace std::chrono;
