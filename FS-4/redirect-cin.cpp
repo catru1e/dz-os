@@ -3,6 +3,7 @@
 #include <fcntl.h>      // open
 #include <unistd.h>     // dup2, close
 #include <cstdlib>      // exit, EXIT_FAILURE
+#include <algorithm>    // std::reverse
 
 void initialize(int argc, char** argv)
 {
