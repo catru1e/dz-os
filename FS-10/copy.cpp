@@ -91,6 +91,14 @@ int main(int argc, char** argv) {
         pos = hole_off;
     }
 
+    // Если дыра в конце добавляем пробелы
+    if (ftruncate(dst, filesize) == -1) {
+        perror("ftruncate");
+        close(src);
+        close(dst);
+        return EXIT_FAILURE;
+    }
+
     close(src);
     close(dst);
 
